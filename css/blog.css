@@ -1,0 +1,134 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Fondo claro */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #36221b;
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto */
+}
+h1{
+    margin-bottom: 10px;
+}
+main section {
+    padding: 2em;
+    width: 100%;
+    max-width: 800px; /* Limita el ancho del contenido */
+}
+
+main section h2 {
+    margin-bottom: 1em;
+    color: #333;
+}
+
+article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    margin-bottom: 2em;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos dentro del artículo */
+}
+
+article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.image-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1em;
+}
+
+.image-icons img {
+    width: 120px; /* Tamaño fijo para la imagen principal */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1em; /* Espacio entre la imagen y los iconos */
+}
+
+
+
+.image-icons .icons img {
+    width: 18px; /* Tamaño fijo para los iconos */
+    height: 18px;
+    margin: 0 5px; /* Espacio entre los iconos */
+}
+
+article .content {
+    max-width: calc(100% - 160px); /* Asegura que el contenido no se desborde */
+}
+
+article h3 {
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+article h3 a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+article h3 a:hover {
+    color: #007BFF; /* Color del enlace al pasar el ratón */
+}
+
+article p {
+    color: #666;
+    margin-bottom: 1em;
+}
+
+footer p {
+    margin: 0;
+}

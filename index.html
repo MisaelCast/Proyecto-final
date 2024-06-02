@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog de Viajes</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos al Blog de Viajes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Explora el Mundo con Nosotros</h2>
+            <p>Descubre los mejores destinos turísticos y vive experiencias inolvidables.</p>
+            <img src="images/promo.jpg" alt="Viaje"  class="viaje">
+        </section>
+        <section>
+            <h2>Viaja a Europa</h2>
+            <p>Descubre los mejores destinos turísticos y vive experiencias inolvidables.</p>
+            <img src="images/promo1.jpg" alt="Viaje"  class="viaje">
+        </section>
+        <section>
+            <h2>Viaja a Tailandia</h2>
+            <img src="images/promo2.jpg" alt="Viaje"  class="viaje">
+        </section>
+        <section>
+            <h2>Video Destacado</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/L9cWqhe83Is" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Blog de Viajes</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var sections = document.querySelectorAll("section");
+            anime({
+                targets: sections,
+                translateY: [50, 0],
+                opacity: [0, 1],
+                easing: 'easeOutExpo',
+                duration: 1500,
+                delay: anime.stagger(200) // Añade un pequeño retraso entre cada sección
+            });
+        });
+    </script>
+    
+</body>
+</html>

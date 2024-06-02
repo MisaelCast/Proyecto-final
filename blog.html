@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog - Blog de Viajes</title>
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Últimas Entradas</h2>
+            <article>
+                <div class="image-icons">
+                    <img src="images/juntos.avif" alt="Bali">
+                </div>
+                <div class="content">
+                    <h3><a href="#">Descubre los Encantos de Bali</a></h3>
+                    <p>Bali es un destino paradisíaco conocido por sus playas, templos y cultura vibrante. Este lugar es perfecto para los viajeros que buscan una mezcla de relajación y aventura...</p>
+                    <p>Desde los campos de arroz en Ubud hasta las playas de Kuta, hay algo para todos. No te pierdas la oportunidad de visitar el Templo de Tanah Lot al atardecer, una experiencia verdaderamente mágica.</p>
+                </div>
+            </article>
+            <article>
+                <div class="image-icons">
+                    <img src="images/china.jpg" alt="Alpes Suizos">
+                </div>
+                <div class="content">
+                    <h3><a href="#">Aventura en los Alpes Suizos</a></h3>
+                    <p>Los Alpes Suizos ofrecen una experiencia inolvidable para los amantes de la naturaleza y el esquí. Con paisajes impresionantes y pistas de clase mundial, es un destino que no puedes perderte...</p>
+                    <p>Ya sea que prefieras esquiar, hacer senderismo o simplemente disfrutar de la vista, los Alpes Suizos tienen algo que ofrecer. Asegúrate de probar la deliciosa fondue suiza después de un día en las montañas.</p>
+                </div>
+            </article>
+            <!-- Agrega más artículos aquí -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Blog de Viajes</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var sections = document.querySelectorAll("section");
+            anime({
+                targets: sections,
+                translateY: [50, 0],
+                opacity: [0, 1],
+                easing: 'easeOutExpo',
+                duration: 1500,
+                delay: anime.stagger(200) // Añade un pequeño retraso entre cada sección
+            });
+        });
+    </script>
+</body>
+</html>

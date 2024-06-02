@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Destinos - Blog de Viajes</title>
+    <link rel="stylesheet" href="css/destinos.css">
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Tu Destino</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Destinos Populares</h1>
+            <div class="destinos-container">
+                <div class="destino">
+                    <img src="images/img1.jpg" alt="París">
+                    <h3>Colombia</h3>
+                    <p>La ciudad del amor y la luz.</p>
+                </div>
+                <div class="destino">
+                    <img src="images/img2.jpg" alt="Tokio">
+                    <h3>Europa</h3>
+                    <p>Una mezcla vibrante de lo antiguo y lo moderno.</p>
+                </div>
+                <div class="destino">
+                    <img src="images/img3.jpg" alt="París">
+                    <h3>Egipto</h3>
+                    <p>Conoce las piramides y las estructuras antiguas.</p>
+                </div>
+                <div class="destino">
+                    <img src="images/img4.jpg" alt="Tokio">
+                    <h3>Japon</h3>
+                    <p>Una mezcla vibrante de lo antiguo y lo moderno.</p>
+                </div>
+                <div class="destino">
+                    <img src="images/img5.jpg" alt="París">
+                    <h3>Italia</h3>
+                    <p>La ciudad de la pizza .</p>
+                </div>
+               
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Blog de Viajes</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var sections = document.querySelectorAll("section");
+            anime({
+                targets: sections,
+                translateY: [50, 0],
+                opacity: [0, 1],
+                easing: 'easeOutExpo',
+                duration: 1500,
+                delay: anime.stagger(200) // Añade un pequeño retraso entre cada sección
+            });
+        });
+    </script>
+    
+</body>
+</html>

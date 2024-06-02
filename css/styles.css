@@ -1,0 +1,78 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #36221b;
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    text-align: center; /* Centra el texto */
+}
+
+main section {
+    padding: 2em;
+    width: 100%;
+    max-width: 800px; /* Limita el ancho del contenido */
+}
+
+main section h2 {
+    margin-bottom: 1em;
+}
+
+main section p {
+    margin-bottom: 1em;
+}
+
+main section img.viaje {
+    max-width: 100%;
+    height: auto;
+}
+h1{
+    margin-bottom: .5em;
+}
+footer p {
+    margin: 0;
+}
